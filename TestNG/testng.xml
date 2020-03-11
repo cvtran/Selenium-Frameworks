@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="test.Example1"/>
-      <class name="test.Example2"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="Loan Department">
+
+	<test name="Home Loan">
+		<classes>
+			<class name="test.Example1" />
+		</classes>
+	</test>
+
+	<test name="Car Loan">
+		<classes>
+			<class name="test.Example2">
+				<methods>
+					<exclude name="MobileLoginCarLoan" />
+					<!-- exclude or include depending on what is easier based on requirements -->
+					<!-- <exclude name="Mobile.*" /> excludes all methods that starts with "Mobile" -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

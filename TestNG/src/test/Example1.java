@@ -5,12 +5,20 @@ import org.testng.annotations.Test;
 public class Example1 {
 
 	@Test
-	public void Demo1() {
-		System.out.println("test1"); //automation
+	public void WebLoginHomeLoan() {
+		//selenium
+		System.out.println("web login home");
 	}
 	
 	@Test
-	public void Demo2() {
-		System.out.println("test2"); //automation
+	public void MobileLoginHomeLoan() {
+		//appium
+		System.out.println("mobile login home");
+	}
+	
+	@Test
+	public void LoginAPIHomeLoan() {
+		//rest api automation
+		System.out.println("api login home");
 	}
 }
