@@ -2,9 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
 
+
 	<test name = "Personal Loan">
+		<groups>
+			<run>
+				<include name = "Mobile"/>
+			</run>
+		</groups>
 		<packages>
-			<package name = "test"/> <!-- run a whole package -->
+			<!-- run a whole package -->
+			<package name = "test"/> 
 		</packages>
 	</test>
 
