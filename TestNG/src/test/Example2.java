@@ -33,12 +33,13 @@ public class Example2 {
 		System.out.println("after method \n");
 	}
 	
-	@Parameters({"URL"})
+	@Parameters({"URL", "APIKey/Username"})
 	@Test
-	public void WebLoginCarLoan(String urlName) {
+	public void WebLoginCarLoan(String urlName, String key) {
 		//selenium
 		System.out.println("web login car");
 		System.out.println(urlName);
+		System.out.println(key);
 	}
 	
 	@Test(groups = {"Mobile"})

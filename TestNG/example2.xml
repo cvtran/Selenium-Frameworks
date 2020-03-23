@@ -3,6 +3,7 @@
 <suite name="Loan Department">
 
 	<parameter name = "URL" value = "google.com"/>
+	<parameter name = "APIKey/Username" value = "sadfasf"/>
 	
 	<test name="Car Loan">
 		<classes>

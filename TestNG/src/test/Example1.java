@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -30,6 +31,7 @@ public class Example1 {
 	public void MobileLoginHomeLoan() {
 		//appium
 		System.out.println("mobile login home");
+		Assert.assertTrue(false);
 	}
 	
 	@Test
