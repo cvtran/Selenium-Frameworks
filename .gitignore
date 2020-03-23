@@ -36,6 +36,5 @@ hs_err_pid*
 
 # testNG
 .classpath
-test-output
 test-output-tests
 
