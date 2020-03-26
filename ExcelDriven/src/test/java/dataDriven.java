@@ -26,8 +26,7 @@ public class dataDriven {
 				XSSFSheet sheet = workbook.getSheetAt(i);
 
 				// scan the first row for the "testcase" column
-				// example code - does not actually do anything because there is no error
-				// checking
+				// example code - does not actually do anything because there is no error checking
 				Iterator<Row> rows = sheet.iterator();
 				Row firstRow = rows.next();
 				Iterator<Cell> ce = firstRow.cellIterator();
@@ -41,7 +40,6 @@ public class dataDriven {
 				}
 
 				// find the test case row and return the row with all of the data in that row
-				// (does not contain error checking)
 				while (rows.hasNext()) {
 					Row r = rows.next();
 					if (r.getCell(column).getStringCellValue().equalsIgnoreCase(testCaseName)) {
